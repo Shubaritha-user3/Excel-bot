@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 # Set up the OpenAI API key
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = st.secrets["OPENAI_API_KEY"]
 # Title for the Streamlit app
 st.title("Excel Chatbot")
 # Initialize session state for conversation history
