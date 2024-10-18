@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import openai
 import os
+
 # Set up the OpenAI API key
 api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = api_key
 # Title for the Streamlit app
 st.title("Excel Chatbot")
 # Initialize session state for conversation history
