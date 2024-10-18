@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import openai
 import os
-from dotenv import load_dotenv
-load_dotenv()
 # Set up the OpenAI API key
 api_key = os.environ.get("OPENAI_API_KEY")
 # Title for the Streamlit app
